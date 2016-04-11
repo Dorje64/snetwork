@@ -1,0 +1,114 @@
+HWND hWndButton=CreateWindowEx(NULL,
+				"BUTTON",
+				"OK",
+				WS_TABSTOP|WS_VISIBLE|
+				WS_CHILD|BS_DEFPUSHBUTTON,
+				50,
+				220,
+				100,
+				24,
+				hWnd,
+				(HMENU)IDC_MAIN_BUTTON,
+				GetModuleHandle(NULL),
+				NULL);
+			//SendMessage(hWndButton,
+				//WM_SETFONT,
+				//(WPARAM)hfDefault,
+//				MAKELPARAM(FALSE,0));
+
+			HWND hWndButton1=CreateWindowEx(NULL,
+				"BUTTON",
+				"menu",
+
+			WS_TABSTOP|WS_VISIBLE|	WS_CHILD|BS_DEFPUSHBUTTON,
+				50,
+				250,
+				100,
+				24,
+				hWnd,
+				(HMENU)IDC_MAIN_BUTTON1,
+				GetModuleHandle(NULL),
+				NULL);
+		//	SendMessage(hWndButton1,
+	//	WM_SETFONT,
+		//		(WPARAM)hfDefault,
+			//	MAKELPARAM(FALSE,0));
+
+			HWND hWndButton2=CreateWindowEx(NULL,
+				"BUTTON",
+				"order",
+				WS_TABSTOP|WS_VISIBLE|
+				WS_CHILD|BS_DEFPUSHBUTTON,
+				50,
+				280,
+				100,
+				24,
+				hWnd,
+				(HMENU)IDC_MAIN_BUTTON2,
+				GetModuleHandle(NULL),
+				NULL);
+			//SendMessage(hWndButton2,
+				//WM_SETFONT,
+				//(WPARAM)hfDefault,
+				//MAKELPARAM(FALSE,0));
+
+			HWND hWndButton3=CreateWindowEx(NULL,
+				"BUTTON",
+				"login",
+				WS_TABSTOP|WS_VISIBLE|
+				WS_CHILD|BS_DEFPUSHBUTTON,
+				300,
+				50,
+				100,
+				24,
+				hWnd,
+				(HMENU)IDC_MAIN_BUTTON3,
+				GetModuleHandle(NULL),
+				NULL);
+			SendMessage(hWndButton3,
+				WM_SETFONT,
+				(WPARAM)hfDefault,
+				MAKELPARAM(FALSE,0));
+			
+		HWND hRad1=CreateWindowEx(NULL,"radio1 ","click1",
+			WS_TABSTOP|WS_VISIBLE|WS_CHILD|BS_RADIOBUTTON,
+				100,180,100,50,
+				hWnd,(HMENU)radio1,GetModuleHandle(NULL),NULL);
+		//	SendMessage(hRad1,
+			//	WM_SETFONT,
+				//(WPARAM)hfDefault,
+				//MAKELPARAM(FALSE,0));
+			
+			HWND hRad2=CreateWindowEx(NULL,	"radio &2","click",
+				WS_TABSTOP|WS_VISIBLE|WS_CHILD|BS_RADIOBUTTON,
+				100,200,100,24,
+				hWnd,(HMENU)radio2,GetModuleHandle(NULL),NULL);
+
+		//	SendMessage(hRad2,
+			//	WM_SETFONT,
+				//(WPARAM)hfDefault,
+				//MAKELPARAM(FALSE,0));
+			
+			HWND hcheck=CreateWindowEx(NULL,
+				"&check box",
+				"tick this",
+				WS_TABSTOP|WS_VISIBLE|
+				WS_CHILD|BS_AUTO3STATE,
+				300,
+				100,
+				100,
+				24,
+				hWnd,
+				(HMENU)check,
+				GetModuleHandle(NULL),
+				NULL);
+		//	SendMessage(hcheck,
+		//		WM_SETFONT,
+			//	(WPARAM)hfDefault,
+			//	MAKELPARAM(FALSE,0));
+
+			//to display button
+		ShowWindow(hRad1,SW_SHOWNORMAL);
+			ShowWindow(hRad2,SW_SHOWNORMAL);
+		ShowWindow(hcheck,SW_SHOWNORMAL);
+			SendMessage(hRad1,BM_SETCHECK,TRUE,0);

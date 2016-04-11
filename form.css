@@ -1,0 +1,21 @@
+body{}
+#form
+{
+	background-color:#FFFF99; 
+	width:800px;
+	margin:auto;
+	height:auto;
+	text-align:center;
+	font-size:25;
+	border-radius:15px;
+}
+
+#form table 
+{
+	margin-left:150px;
+	margin-top:10px;
+}
+#form table tr td
+{
+	margin-left:20px;
+}

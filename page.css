@@ -1,0 +1,82 @@
+body
+{
+background-color:#99FFFF;
+}
+
+#header
+{
+height:60px;
+width:1000px;
+margin:auto;
+background-color:red;
+/*margin-bottom:20px;*/
+/*border-radius:10px;*/
+background-image: url("header.jpg");
+}
+
+.bind
+{
+width:1000px;
+height:auto;
+margin:auto;
+}
+#menubar{width:1000px;  height:35px; border-radius:10px;  margin:auto; margin-top:0px;}
+
+#right
+{
+float:left;
+width:660px;
+height :520px;
+margin-right:5px;
+background-color:white;
+}
+#left
+{
+float:right;
+height:auto;
+width:320px;
+text-align:center;
+box-shadow:7px 7px 7px black;
+background-color:#66FF66;
+margin-top:30px;
+}
+#boton{ height:35px; margin-left:200px;}
+#boton ul{  margin-top:0px; display:block;}
+#boton  ul li
+{
+display:inline;
+padding:5px 15px;
+box-shadow:4px 4px 4px black;
+background-image:url(boton.png);
+background-repeat:repeat-x;
+border-radius:20px;
+height:35px;
+line-height:30px;
+text-align:center;
+list-style-type:none;
+margin:20px 10px;
+
+}
+boton:link{}
+boton:hover{}
+boton:active{}
+#click{font-size:30px; text-align:center;}
+a:link{color:Red;}
+a:hover{color:black;}
+a:active{color:green;}
+/* home*/
+#homeleft{width:200px; height:500px; border:1px  solid gray; float:left; margin-top:20px}
+#home{width:570px; height:auto; float:left; margin-left:4px;}
+#homeright{width:200px; height:500px; float:left;  margin-top:20px; margin-left:14px; }
+#photo{ width:580px; height:200px; box-shadow:3px -3px 3px  gray; background-color:#6AEFED;}
+#post{width:530px; height:auto; margin-top:2px; margin:auto; background-color:#FFFFCC;}
+#status{width:530px; height:65px; margin:auto; border-radius:20px;background-color:#FFFFCC;}
+/* homeright id card*/
+#idcard{width:200px; height:350px; border:1px  black; float:left;  border-radius:5px;  box-shadow:3px -3px 3px gray;}
+#profylpic{width:120px; height:150px; border:1px solid gray;  margin:10px 30px;}
+#profylinfo{width:230px; height:200px; margin-top:10px ; margin-left:5px; font-size:20; }
+#profylinfo ul{list-style-type:none; margin:0; padding:0;}
+/*profile*/
+#bigbox{width:760px; height:500px; background-color:#E8EEED; margin-left:20px; margin-top:20px; float:left;}
+#box{width:200px; height:auto; box-shadow:black; float:left; margin:50px 10px 50px 30px; background-color:#9EF4E9;}
+#bigbox ul li{display:inline; list-style-type:none;}

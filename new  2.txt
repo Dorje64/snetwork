@@ -1,0 +1,21 @@
+if(stn_blc==20)
+ {
+ 
+	  MessageBox(NULL,"THIS ACCOUNT DOESNOT EXIST","",MB_OK);
+ }
+ else if(stn_blc==10)
+{
+ MessageBox(NULL,"THIS ACCOUNT HAVE NOT ENOUGH BALANE","",MB_OK);
+}
+else
+ {
+	 if(!get_menu_item(item))
+	 {
+		 MessageBox(NULL,"THIS ITEM IS NOT AVAILABLE","SORRY",MB_OK);
+	 }
+
+	 else
+		 enter_order(id1,order,quantity1,price1);
+}
+				 
+				  return 0;
